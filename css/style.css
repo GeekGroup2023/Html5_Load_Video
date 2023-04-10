@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto Slab", Helvetica, sans-serif;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+#intro {
+	position: absolute;
+	margin-top: -50px;
+	left: 9%;
+	z-index: 4;
+	animation: fadeInDown 1s;
+	transform: rotate(-5deg);
+	padding: 1vw 2.5vw 2.5vw 2.5vw;
+	top: 2%;
+	width: 26vw;
+	color: white;
+	background: #005176;
+	/* font-weight: bold; */
+	font-size: 1vw;
+	line-height: 1.6;
+}
+
+#intro p {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 2.7vw;
+	margin: 50px 0 0 0;
+}
+
+video {
+	width: 100%;
+	transition: all 0.5s ease-in;
+	box-shadow: 10px 10px 27px #00000094;
+	animation: fadeIn 7s;
+}
+
+.naar-links {
+	transform: rotate(2deg);
+}
+
+.blogbeeld {
+	position: relative;
+}
+
+.blogbeeld a {
+	font-size: 2vw;
+	z-index: 100;
+	position: absolute;
+	padding: 2vw;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	text-decoration: none;
+	/* transition: all 0.5s ease-out; */
+	box-shadow: -10px 10px 10px #00000069;
+}
+
+.links {
+	top: 35%;
+	left: 5%;
+
+	transform: rotate(2deg);
+}
+
+#home {
+	background: none;
+	box-shadow: none;
+	left: 0;
+	top: 0;
+	font-size: 1.3vw;
+	color: lightgreen;
+}
+
+#home:active {
+	margin-left: 5px;
+}
+
+.rechts {
+	top: 50%;
+	left: 10%;
+	transform: rotate(-2deg);
+}
+
+.blogbeeld a:hover {
+	/* transition: all 0.5s ease-out;
+	transform: scale(1.4); */
+	background: green;
+	z-index: 4000;
+}
+
+.blogbeeld a:active {
+	background: rgb(0, 68, 0);
+	margin-left: 10px;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.fadeIn {
+	animation-name: fadeIn;
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+.fadeInDown {
+	animation-name: fadeInDown;
+}
+
+.peerConnectionState-new {
+	color: cornflowerblue;
+  }
+  .peerConnectionState-connecting {
+	color: orange;
+  }
+  .peerConnectionState-connected {
+	color: green;
+  }
+  .peerConnectionState-disconnected,
+  .peerConnectionState-closed,
+  .peerConnectionState-failed {
+	color: red;
+  }
+
+  .iceConnectionState-new {
+	color: cornflowerblue;
+  }
+  .iceConnectionState-checking {
+	color: orange;
+  }
+  .iceConnectionState-connected,
+  .iceConnectionState-completed {
+	color: green;
+  }
+  .peerConnectionState-disconnected,
+  .peerConnectionState-closed,
+  .peerConnectionState-failed {
+	color: red;
+  }
+
+  .iceGatheringState-new {
+	color: cornflowerblue;
+  }
+  .iceGatheringState-gathering {
+	color: orange;
+  }
+  .iceGatheringState-complete {
+	color: black;
+  }
+
+  .signalingState-stable {
+	color: green;
+  }
+  .signalingState-have-local-offer,
+  .signalingState-have-remote-offer,
+  .signalingState-have-local-pranswer,
+  .signalingState-have-remote-pranswer {
+	color: cornflowerblue;
+  }
+  .signalingState-closed {
+	color: red;
+  }
+
+
+  /* added css from here */
+
+  body *{
+	font-family: 'Mulish', sans-serif;
+	text-align: center;
+  }
+
+  #content{
+   width:820px;
+   position: relative;
+   margin:0 auto; 
+  }
+  
+  #buttons{
+	clear:both;
+	padding:0 0 0 0;
+	text-align: center;
+  }
+
+  button{
+	padding:10px 20px;
+	border-radius: 5px;
+	border:none;
+	font-size: 16px;
+	margin:0 5px;
+	background-color: #7459FE;
+	color: #fff;
+  }
+
+  button:hover{
+	background-color: #9480FF;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+  }
+
+  #status{
+	clear:both;
+	padding:20px 0 0 0 ;
+	text-align: left;
+	display: inline-block;
+	zoom: 1;
+	line-height: 140%;
+	font-size: 15px;
+  }
+
+  #status div{
+	padding-bottom: 10px;
+  }
+
+  #video-wrapper{
+	background:url(images/bg.png);
+	height:500px;
+	background-position: top;
+  }
+
+  #video-wrapper div{
+	width:400px;
+	margin:0 auto;
+	padding:50px 0 0 0;
+  }
+  video{
+	display:block;
+	/*border:1px solid;*/
+	border-radius: 50%;
+	background-color: #fff;
+  }
+  #talk-button:disabled {
+  background-color: rgb(241, 242, 246);
+  }
+  #talk-button:hover{
+	background-color: #9480FF;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+  }
+  #talk-button {
+	  border: none;
+	  background: url(/images/record.svg) center center no-repeat rgb(116, 89, 254);
+	  width: 39px;
+	  height: 39px;
+	  border-radius: 100vh;
+  }
